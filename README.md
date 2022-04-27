@@ -2,7 +2,7 @@
 
 A bot that was created to help friendos learn to code.
 
-Click [here](https://discord.gg/3DTtWMZHU4) to join the Discord server!
+Click [here](https://discord.gg/3DTtWMZHU4) to join our Discord server!
 
 # The Idea
 
