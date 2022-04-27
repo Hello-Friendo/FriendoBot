@@ -40,3 +40,5 @@ A virtual environment copies the installed Python system environment, but isolat
 ## Installing the python libraries
 
 `> pip install -r requirements.txt`
+
+# Contributors
