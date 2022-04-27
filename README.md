@@ -6,9 +6,13 @@ Click [here](https://discord.gg/3DTtWMZHU4) to join our Discord server!
 
 # The Idea
 
-With so many of our members looking to learn Python, I figured it'd be a great project for us to build a Discord bot together as a community! We will work together to make project decisions, plan, implement, and review ideas. There will be a scheduled "*class*" once a week for 60-90 minutes while allowing people to work on their own during the week.
+With so many of our members looking to learn Python, I thought it would be a great idea for us to build a Discord bot together as a community! 
 
-# Setup
+We will build the bot's core framework together and members will create their own custom commands.
+
+There will be a scheduled "*class*" once a week for 60-90 minutes but anyone can work on their own throughout the week on the project.
+
+# Project Setup
 
 ## Requirements
 
@@ -42,7 +46,7 @@ A virtual environment copies the installed Python system environment, but isolat
 > source .bot-env/Scripts/activate
 ```
 
-## Installing the python libraries
+## Installing the required libraries
 
 ```
 > pip install -r requirements.txt
@@ -50,4 +54,4 @@ A virtual environment copies the installed Python system environment, but isolat
 
 ---
 
-### [Contributors](https://github.com/Hello-Friendo/FriendoBot/graphs/contributors)
+### [Friendos who contributed code](https://github.com/Hello-Friendo/FriendoBot/graphs/contributors)
