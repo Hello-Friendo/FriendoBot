@@ -22,25 +22,32 @@ With so many of our members looking to learn Python, I figured it'd be a great p
 
 A virtual environment copies the installed Python system environment, but isolates the packages a project requires into a local installion. This keeps the system install clean by installing packages locally instead of globally to the system.
 
-### Creating the virtual environment
+### **Creating the virtual environment**
 
-`> python3 -m venv .bot-env`
+```
+> python3 -m venv .bot-env
+```
 
-
-### Activate the virtual environment
+### **Activate the virtual environment**
 
 **Windows:**
 
-`> .bot-env\Scripts\activate.bat`
+```
+> .bot-env\Scripts\activate.bat
+```
 
 **OSX / Linux:**
 
-`> source .bot-env/Scripts/activate`
+```
+> source .bot-env/Scripts/activate
+```
 
 ## Installing the python libraries
 
-`> pip install -r requirements.txt`
+```
+> pip install -r requirements.txt
+```
 
 ---
 
-## [Contributors](https://github.com/Hello-Friendo/FriendoBot/graphs/contributors)
+### [Contributors](https://github.com/Hello-Friendo/FriendoBot/graphs/contributors)
