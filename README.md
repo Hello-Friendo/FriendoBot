@@ -15,7 +15,7 @@ With so many of our members looking to learn Python, I figured it'd be a great p
 * [Git](https://git-scm.com/downloads)
 * A GitHub account
 * [Visual Studio Code](https://code.visualstudio.com/download)
-    * [Live Share Extension for *classes*](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+    * [Live Share Extension for *class*](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 * Python 3.10 (Installable through the Microsoft Store on Windows)
 
 ## Creating the virtual environment
