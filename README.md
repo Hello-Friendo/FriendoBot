@@ -41,4 +41,6 @@ A virtual environment copies the installed Python system environment, but isolat
 
 `> pip install -r requirements.txt`
 
-# Contributors
+---
+
+## [Contributors](https://github.com/Hello-Friendo/FriendoBot/graphs/contributors)
