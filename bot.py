@@ -1,7 +1,13 @@
 # Import python libraries
 import discord
 import yaml
+import os
 
+# Error Handling, what if config.yaml doesn't exist?
+if(os.path.isfile("config.yaml") == False):
+    print("[ERROR]: 'config.yaml' does not exist!")
+    exit()
+    
 # Load yaml config
 with open("config.yaml", "r") as yamlconfig:
     config = yaml.safe_load(yamlconfig)
