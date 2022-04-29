@@ -2,6 +2,15 @@
 import discord
 import yaml
 import os
+import aiohttp
+import json
+
+async def getCat():
+    async with aiohttp.ClientSession() as session:
+        async with session.get('https://cataas.com/cat/cute?json=true') as resp:
+            catJson = await resp.json()
+            return f'https://cataas.com/{catJson["url"]}'
+
 
 # Error Handling, what if config.yaml doesn't exist?
 if(os.path.isfile("config.yaml") == False):
@@ -30,6 +39,10 @@ async def on_ready():
 async def hello(ctx):
     # print(f"{ctx.author} said hello.") # TODO: Convert to python logging
     await ctx.respond(f'Hello {ctx.user.display_name}!')
+    
+@bot.slash_command(guild_ids=[config['discord']['server_id']], name="randomcat", description="Sends a random cute cat image to the discord server")
+async def randCat(ctx):
+    await ctx.respond(await getCat())
 
 # Run the bot
 bot.run(config['discord']['token'])
