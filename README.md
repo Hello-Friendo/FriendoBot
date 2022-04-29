@@ -29,7 +29,7 @@ A virtual environment copies the installed Python system environment, but isolat
 ### **Creating the virtual environment**
 
 ```
-> python3 -m venv .bot-env
+python3 -m venv .bot-env
 ```
 
 ### **Activate the virtual environment**
@@ -37,19 +37,19 @@ A virtual environment copies the installed Python system environment, but isolat
 **Windows:**
 
 ```
-> .bot-env\Scripts\activate.bat
+.bot-env\Scripts\activate.bat
 ```
 
 **OSX / Linux:**
 
 ```
-> source .bot-env/Scripts/activate
+source .bot-env/Scripts/activate
 ```
 
 ## Installing the required libraries
 
 ```
-> pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ---
