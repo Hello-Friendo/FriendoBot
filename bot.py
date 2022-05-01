@@ -2,10 +2,27 @@
 import discord
 import yaml
 import os
+import logging
 
 # These Import are used for Random Cat Images
 import aiohttp
 import json
+
+# Globals
+# logger
+logger = logging.getLogger('discord')
+
+# Configure the logger
+logger.setLevel(logging.DEBUG)
+
+# create the File Handler
+handler = logging.FileHandler('./discord.log', encoding='utf-8', mode='w')
+
+# Configure the handler
+handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
+
+#set the loggers file handler
+logger.addHandler(handler)
 
 # used to get a random Cat image
 # Returns a String
@@ -45,7 +62,7 @@ async def on_ready():
 # Create slash command for /hello
 @bot.slash_command(guild_ids=[config['discord']['server_id']], name="hello", description="Say Hello!")
 async def hello(ctx):
-    # print(f"{ctx.author} said hello.") # TODO: Convert to python logging
+    logger.debug(f"{ctx.author} said hello.")
     await ctx.respond(f'Hello {ctx.user.display_name}!')
 
 # Create slash command for /randomcat   
