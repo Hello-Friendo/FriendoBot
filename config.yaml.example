@@ -1,3 +1,4 @@
+log_file: bot
 discord:
   server_id: <DISCORD GUILD ID>
   token: <DISCORD APPLICATION TOKEN>
