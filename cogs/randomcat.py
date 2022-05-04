@@ -14,7 +14,7 @@ class RandomCat(commands.Cog):
 
     # used to get a random Cat image
     # Returns a String
-    async def getCat():
+    async def getCat(self):
         # get a Client from AIOHttp
         async with aiohttp.ClientSession() as session:
             # Connects to 'https://cataas.com/cat/cute?json=true' and gets a responce
@@ -22,7 +22,7 @@ class RandomCat(commands.Cog):
                 # Parses the Responce from JSON to Python Dictanary
                 catJson = await resp.json()
                 # Returns a String that is made up of the responce URL and https://cataas.com/
-                return f'https://cataas.com{catJson["url"]}'
+                return f'https://cataas.com/{catJson["url"]}'
 
     # Create slash command for /hello
     @commands.slash_command(
@@ -30,7 +30,7 @@ class RandomCat(commands.Cog):
         description="Sends a random cute cat image to the discord server",
     )
     async def randCat(self, ctx):
-        self.log.info("A user requested a random cat")
+        self.log.info(f"{ctx.author} requested a random cat")
         # get a cat URL
         catUrl = await self.getCat()
         # checks that PrevUrl isn't None and the CatUrl isn't the same as the previous Cat Url
