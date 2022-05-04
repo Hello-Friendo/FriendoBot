@@ -10,13 +10,10 @@ class Hello(commands.Cog):
         self.bot = bot
         self.log = utils.log.get()
 
-    def log_hello(self, ctx):
-        self.log.info(f"{ctx.author} said /hello!")
-
     # Create slash command for /hello
     @commands.slash_command(name="hello", description="Say Hello!")
     async def hello(self, ctx):
-        self.log_hello(ctx)
+        self.log.info(f"{ctx.author} said /hello!")
         await ctx.respond(f"Hello {ctx.user.display_name}!")
 
 
