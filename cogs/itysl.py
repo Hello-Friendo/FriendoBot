@@ -26,11 +26,17 @@ class ITYSL(commands.Cog):
         return random.choice(self.sketches)
 
     async def get_quotes(self, sketch):
+        quotes_count = 2
+
         quotables = sketch["Transcript"].split(".")
-        return [
-            random.choice(quotables).strip()[:1024],
-            random.choice(quotables).strip()[:1024],
-        ]
+        quotes = []
+
+        while len(quotes) < quotes_count:
+            _quote = random.choice(quotables).strip()[:1024]
+            if len(_quote) > 0:
+                quotes.append(_quote)
+
+        return quotes
 
     # Create slash command for /itysl
     @commands.slash_command(
