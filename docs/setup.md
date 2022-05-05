@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```
 
 ## Get config.yaml
-Ask Mark <@bearlikelion> for the latest config.yaml
+Ask [Mark <Marx#8945>](https://github.com/bearlikelion) for the latest config.yaml
 
 ## Run the bot
 
