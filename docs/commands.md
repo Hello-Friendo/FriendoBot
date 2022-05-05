@@ -109,16 +109,16 @@ For further details and examples view [AIOHTTP's](https://docs.aiohttp.org/en/st
 # Inspiration
 
 > Scroll through and see if anything pops out at you, is so, **implement it!**
-* ## [Github's list of public APIs](https://github.com/public-apis/public-apis)
+* ### [Github's list of public APIs](https://github.com/public-apis/public-apis)
 
 > A good list of example commands already written
-* ## [Pycord's Example Commands](https://github.com/Pycord-Development/pycord/tree/master/examples)
+* ### [Pycord's Example Commands](https://github.com/Pycord-Development/pycord/tree/master/examples)
 
 > Pycord's supported interactions
-* ## [Pycord's Interactions Guide](https://guide.pycord.dev/interactions/)
+* ### [Pycord's Interactions Guide](https://guide.pycord.dev/interactions/)
 
 > 42 Python Project Ideas for Beginners
-* ## [Upgrad - Python Project Ideas](https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/)
+* ### [Upgrad - Python Project Ideas](https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/)
 
 > Python Projects and Ideas
-* ## [Hackr.io - Python Projects](https://hackr.io/blog/python-projects#beginner-level-python-project-ideas)
+* ### [Hackr.io - Python Projects](https://hackr.io/blog/python-projects#beginner-level-python-project-ideas)
