@@ -32,16 +32,14 @@ class Steam(commands.Cog):
         sales_embed = discord.Embed(title="Today's Steam Sales:")
 
         for game in specials:
+            original_price = int(game["original_price"]) / 100
+            sale_price = int(game["final_price"]) / 100
             sales_embed.add_field(
                 name=game["name"],
-                value=f"~~{game['original_price']}~~ {game['final_price']} ({game['discount_percent']}%)",
+                value=f"~~${original_price}~~ **${sale_price}** *({game['discount_percent']}% off)* - [Store Page](https://steampowered.com/app/{game['id']})",
                 inline=False,
             )
-            sales_embed.add_field(
-                name="Store Page:",
-                value=f"https://steampowered.com/app/{game['id']}",
-                inline=False,
-            )
+        sales_embed.set_footer(text="All prices are in USD.")
 
         await ctx.respond("", embed=sales_embed)
 
