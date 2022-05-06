@@ -22,6 +22,7 @@ There will be a scheduled "*class*" once a week for 60-90 minutes but anyone can
 | [/hello](cogs/hello.py) | Says Hello to a user, example command | [Mark <Marx#8945>](https://github.com/bearlikelion)
 | [/randomcat](cogs/randomcat.py) | Show a random cute cat from CAAS (Cat as a Service) | [Grandon <Grandon#2681>](https://github.com/Grandon135)
 | [/itysl](cogs/itysl.py) | Show quotes, images, and a timetamp link to sketches from Netflix's I THINK YOU SHOULD LEAVE | [Mark <Marx#8945>](https://github.com/bearlikelion)
+| [/steamsales](cogs/steam.py) | List today's special sales on Steam | [Jeewa <Jeewa#6972>](https://github.com/Jeeewa)
 
 ---
 
