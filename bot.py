@@ -1,6 +1,5 @@
 # Import python libraries
 import os
-
 import discord
 
 import utils.config
@@ -20,7 +19,6 @@ for cog in os.listdir("./cogs"):
 @bot.event
 async def on_ready():
     logger.info(f"Bot logged in as {bot.user}")
-
 
 # Run the bot
 bot.run(config["discord"]["token"])
