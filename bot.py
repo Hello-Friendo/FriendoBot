@@ -12,15 +12,17 @@ logger = utils.log.setup()  # Configure the logger
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.presences = True
 intents.members = True
+
 # Initialize Discord.Bot
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 
-async def load_extensions():
+async def load_cogs():
     for filename in os.listdir("./cogs"):
         if filename.endswith(".py"):
-            # cut off the .py from the file name
+            logger.debug(f"Loading extension: cogs/{filename}")
             await bot.load_extension(f"cogs.{filename[:-3]}")
 
 
@@ -28,13 +30,5 @@ async def load_extensions():
 async def on_ready():
     logger.info(f"Bot logged in as {bot.user}")
 
-# Run the bot
-# bot.run(config["discord"]["token"])
-
-
-async def main():
-    async with bot:
-        await load_extensions()
-        await bot.start(config["discord"]["token"])
-
-asyncio.run(main())
+asyncio.run(load_cogs())
+bot.run(config["discord"]["token"])

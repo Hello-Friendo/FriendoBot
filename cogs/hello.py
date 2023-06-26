@@ -3,18 +3,19 @@
 ##############################
 import utils.log
 from discord.ext import commands
+from discord.ext.commands import Context, Bot
 
 
 class Hello(commands.Cog):
-    def __init__(self, bot):
+    def __init__(self, bot: Bot):
         self.bot = bot
         self.log = utils.log.get()
 
     # Create slash command for /hello
     @commands.hybrid_command(name="hello", description="Say Hello!")
-    async def hello(self, ctx):
+    async def hello(self, ctx: Context):
         self.log.info(f"{ctx.author} said /hello!")
-        await ctx.respond(f"Hello {ctx.user.display_name}!")
+        await ctx.send(f"Hello {ctx.user.display_name}!")
 
 
 # Py-Cord calls setup on load
