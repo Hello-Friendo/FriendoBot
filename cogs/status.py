@@ -16,10 +16,10 @@ class Status(commands.Cog):
             "Hello Friendo 👋",
             "👋 Hello Friendo",
             "👋 Hello Friendo 👋",
-            "Learn to code Python! 🐍",
-            "Hello Friendo Bot",
-            "The Friendo Machine",
-            "FRIENDOS FOREVER"
+            "🐍 Learn Python!",
+            "🤖 Hello Friendo Bot",
+            "Friendo Machine 🤖",
+            "FRIENDOS FOREVER ❤️"
         ]
         self.activities = [
             discord.ActivityType.playing,
@@ -40,5 +40,5 @@ class Status(commands.Cog):
         self.log.info(f"Set activity {activity} to status {status}")
 
 
-def setup(bot):  # Py-Cord calls setup on load
-    bot.add_cog(Status(bot))  # Add cog to the bot
+async def setup(bot):  # Py-Cord calls setup on load
+    await bot.add_cog(Status(bot))  # Add cog to the bot

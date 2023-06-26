@@ -11,12 +11,12 @@ class Hello(commands.Cog):
         self.log = utils.log.get()
 
     # Create slash command for /hello
-    @commands.slash_command(name="hello", description="Say Hello!")
+    @commands.hybrid_command(name="hello", description="Say Hello!")
     async def hello(self, ctx):
         self.log.info(f"{ctx.author} said /hello!")
         await ctx.respond(f"Hello {ctx.user.display_name}!")
 
 
 # Py-Cord calls setup on load
-def setup(bot):
-    bot.add_cog(Hello(bot))  # Add cog to the bot
+async def setup(bot):
+    await bot.add_cog(Hello(bot))  # Add cog to the bot

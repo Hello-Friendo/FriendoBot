@@ -25,7 +25,7 @@ class RandomCat(commands.Cog):
                 return f'https://cataas.com/{catJson["url"]}'
 
     # Create slash command for /hello
-    @commands.slash_command(
+    @commands.hybrid_command(
         name="randomcat",
         description="Sends a random cute cat image to the discord server",
     )
@@ -45,5 +45,5 @@ class RandomCat(commands.Cog):
 
 
 # Py-Cord calls setup on load
-def setup(bot):
-    bot.add_cog(RandomCat(bot))  # Add cog to the bot
+async def setup(bot):
+    await bot.add_cog(RandomCat(bot))  # Add cog to the bot

@@ -22,7 +22,7 @@ class Steam(commands.Cog):
                 return steam["specials"]["items"]
 
     # Create slash command for /steamsales
-    @commands.slash_command(
+    @commands.hybrid_command(
         name="steamsales", description="View current sales on steam!"
     )
     async def Steam(self, ctx):
@@ -45,5 +45,5 @@ class Steam(commands.Cog):
 
 
 # Py-Cord calls setup on load
-def setup(bot):
-    bot.add_cog(Steam(bot))  # Add cog to the bot
+async def setup(bot):
+    await bot.add_cog(Steam(bot))  # Add cog to the bot
