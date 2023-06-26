@@ -14,11 +14,12 @@
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
-        }
+        },
+        "editor.defaultFormatter": "ms-python.autopep8"
     },
     "python.linting.enabled": false,
     "python.testing.promptToConfigure": false,
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
     "prettier.printWidth": 120,
     "prettier.singleQuote": true,
     "editor.codeActionsOnSave": {

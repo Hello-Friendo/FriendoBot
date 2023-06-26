@@ -15,8 +15,8 @@ for cog in os.listdir("./cogs"):
         logger.debug(f"Loading command: {cog}")
         command = bot.load_extension(f"cogs.{cog[:-3]}")
 
-# Create bot event for logon
-@bot.event
+
+@bot.event  # Create bot event for logon
 async def on_ready():
     logger.info(f"Bot logged in as {bot.user}")
 
