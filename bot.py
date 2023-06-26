@@ -26,9 +26,14 @@ async def load_cogs():
             await bot.load_extension(f"cogs.{filename[:-3]}")
 
 
+async def start_bot():
+    await bot.start(config["discord"]["token"])
+
+
 @bot.event  # Create bot event for logon
 async def on_ready():
     logger.info(f"Bot logged in as {bot.user}")
 
 asyncio.run(load_cogs())
-bot.run(config["discord"]["token"])
+asyncio.run(start_bot())
+# bot.start(config["discord"]["token"])
