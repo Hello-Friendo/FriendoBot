@@ -15,7 +15,7 @@ class Hello(commands.Cog):
     @commands.hybrid_command(name="hello", description="Say Hello!")
     async def hello(self, ctx: Context):
         self.log.info(f"{ctx.author} said /hello!")
-        await ctx.send(f"Hello {ctx.user.display_name}!")
+        await ctx.send(f"Hello {ctx.author.display_name}!")
 
 
 # Py-Cord calls setup on load
