@@ -15,7 +15,7 @@ def load():
         config['server_id'] = os.environ.get('server_id')
 
     if os.environ.get('server_id'):
-        config['token'] = os.environ.get('server_id')
+        config['token'] = os.environ.get('token')
 
     config['log_file'] = os.environ.get('log_file', "bot")
 
