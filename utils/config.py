@@ -4,7 +4,7 @@ import yaml
 
 def load():
 
-    config = []
+    config = {}
 
     # Load yaml config
     if os.path.isfile("config.yaml"):
