@@ -27,7 +27,7 @@ async def load_cogs():
 
 
 async def start_bot():
-    await bot.start(config["discord"]["token"])
+    await bot.start(config["token"])
 
 
 @bot.event  # Create bot event for logon
