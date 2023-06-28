@@ -7,7 +7,7 @@ def load():
     config = []
 
     # Load yaml config
-    if os.path.isFile("config.yaml"):
+    if os.path.isfile("config.yaml"):
         with open("config.yaml", "r") as config:
             config = yaml.safe_load(config)
 
