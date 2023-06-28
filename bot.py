@@ -27,6 +27,7 @@ async def load_cogs():
 
 
 async def start_bot():
+    print("Token: " + config["token"])
     await bot.start(config["token"])
 
 
